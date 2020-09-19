@@ -12,7 +12,67 @@
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
 	<link rel="icon" type="image/png" href="media/images/Icon.png">
+<style type="text/css">
+	@media (min-width: 768px) and (max-width: 1160px){
+		.video-section iframe{
+			width: 100%;
+		}
+	}
+	@media only screen and (max-width: 1024px){
+header .top-bar {
+    left: 0;
+}
+.scnd-video iframe{
+		width:100%;
+	}
+}
+@media only screen and (max-width: 991px){
+	.col-three.res-native {
+    width: 100%;
+}
+.col-three.res-native p {
+    margin: 0 !important;
+}
+.col-three.res-native p br {
+    display: none;
+}
+.col-three.res-video {
+    width: 33.33%;
+        margin-top: 20px;
+            padding: 0 5px;
+}
+}
+@media only screen and (max-width:767px){
+	.col-three.res-video {
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+}
+.scnd-video p, .video-section p{
+ 	text-align: center;
+}
+.scnd-video .col-three, .video-section .col-three, .scnd-video .col-nine, .video-section .col-nine{
+	width: 100%;
+}
+.col-three.respara p {
+    margin: 0 !important;
+}
+.col-three.respara p br{
+    display: none;
+}
+}
+@media only screen and (max-width:360px){
+	.services-list .service{
+		padding: 0;
+	}
+.services-list .service blockquote {
+    margin: 3rem 0;
+    padding-left: 3rem;
+    position: relative;
+}
 
+}
+</style>
 </head>
 
 <body id="top">
@@ -423,7 +483,7 @@ Worked on a research reflection paper on Database-as-a-Service and an android ap
 
    		</div>   		
    	</div> <!-- /section-intro-->
-   	<div class="row portfolio-content">
+   	<div class="row portfolio-content video-section">
 		<div class="col-twelve" style="margin-top: 20px;margin-bottom: 60px;">
 			<div class="col-twelve">
 				<div class="col-three" style="text-align: center">
@@ -437,22 +497,22 @@ Worked on a research reflection paper on Database-as-a-Service and an android ap
 			    </div>
 			</div>
 			<div class="col-twelve">
-				    <div class="col-three" style="text-align: center">
-			            <p style="margin-top: 180px;margin-bottom: 100px;">React Native <br/>Python <br/>DynamoDB <br/>AWS S3 <br/>Postman <br/>Figma</p>
+				    <div class="col-three res-native" style="text-align: center">
+			            <p style="margin-top: 180px;margin-bottom: 100px;">React Native, <br/>Python, <br/>DynamoDB, <br/>AWS S3, <br/>Postman, <br/>Figma</p>
 			            <a href="https://www.opal-app.org"><i class="icon-earth"></i></a>
 			        </div>
-			        <div class="col-three">
+			        <div class="col-three res-video">
 			            <iframe src="media/video/Onboarding_for_Mentees.mp4" width="250" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen id="fitvid0"></iframe>  
 			        </div>
-			        <div class="col-three">
+			        <div class="col-three res-video">
 			            <iframe src="media/video/Onboarding_for_Mentors.mp4" width="250" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen id="fitvid0"></iframe>
 			        </div>
-			        <div class="col-three">
+			        <div class="col-three res-video">
 			            <iframe src="media/video/Find_for_Mentees.mp4" width="250" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen id="fitvid0"></iframe>
 			        </div>                                
 			</div>
 		</div>
-		<div class="col-twelve" style="margin-top: 20px;margin-bottom: 60px;">
+		<div class="col-twelve scnd-video" style="margin-top: 20px;margin-bottom: 60px;">
 			<div class="col-twelve">
 				<div class="col-three" style="text-align: center">
 			        <h2 style="margin-bottom: 0px;">Caretaker</h2>
@@ -464,9 +524,9 @@ Worked on a research reflection paper on Database-as-a-Service and an android ap
 			    	</p>
 			    </div>
 			</div>
-			<div class="col-twelve">
-				    <div class="col-three" style="text-align: center">
-			            <p style="margin-top: 300px;margin-bottom: 100px;">PHP <br/>MySQL</p>
+			<div class="col-twelve ">
+				    <div class="col-three respara" style="text-align: center">
+			            <p style="margin-top: 300px;margin-bottom: 100px;">PHP, <br/>MySQL</p>
 			            <h2><a href="https://github.com/gmit816/CareTaker" class="fa fa-github"></a></h2>
 			        </div>
 			        <div class="col-nine">
@@ -474,7 +534,7 @@ Worked on a research reflection paper on Database-as-a-Service and an android ap
 			        </div>                                
 			</div>
 		</div>
-		<div class="col-twelve" style="margin-top: 20px;margin-bottom: 60px;">
+		<div class="col-twelve scnd-video" style="margin-top: 20px;margin-bottom: 60px;">
 			<div class="col-twelve">
 				<div class="col-three" style="text-align: center">
 			        <h2 style="margin-bottom: 0px;">WebCrawler</h2>
@@ -487,8 +547,8 @@ Worked on a research reflection paper on Database-as-a-Service and an android ap
 			    </div>
 			</div>
 			<div class="col-twelve">
-				    <div class="col-three" style="text-align: center">
-			            <p style="margin-top: 300px;margin-bottom: 100px;">Java <br/>JSoup</p>
+				    <div class="col-three respara" style="text-align: center">
+			            <p style="margin-top: 300px;margin-bottom: 100px;">Java, <br/>JSoup</p>
 			            <h2><a href="https://github.com/gmit816/WebCrawler" class="fa fa-github"></a></h2>
 			        </div>
 			        <div class="col-nine">
@@ -746,25 +806,25 @@ Worked on a research reflection paper on Database-as-a-Service and an android ap
 
 	      		<div class="service">	 
 					<div class="service-content">	
-						<p>
+					
 						<blockquote>Mit has been a fantastic worker and I give him my whole hearted recommendation. He combines great technical skill with a great deal of commitment and kindness. He is a fantastic team mate. One of the best engineers I have worked with.</blockquote>
-						</p>
+
 						<cite>- Joe Bredar, Chief Executive Officer at DoBid</cite>
 					</div> 	         	 
 				</div> <!-- /service -->
 				<div class="service">	 
 					<div class="service-content">	
-						<p>
+			
 						<blockquote>Mit has been a fantastic worker and I give him my whole hearted recommendation. He combines great technical skill with a great deal of commitment and kindness. He is a fantastic team mate. One of the best engineers I have worked with.</blockquote>
-						</p>
+					
 						<cite>- Joe Bredar, Chief Executive Officer at DoBid</cite>
 					</div> 	         	 
 				</div> <!-- /service -->
 				<div class="service">	 
 					<div class="service-content">	
-						<p>
+					
 						<blockquote>Mit has been a fantastic worker and I give him my whole hearted recommendation. He combines great technical skill with a great deal of commitment and kindness. He is a fantastic team mate. One of the best engineers I have worked with.</blockquote>
-						</p>
+					
 						<cite>- Joe Bredar, Chief Executive Officer at DoBid</cite>
 					</div> 	         	 
 				</div> <!-- /service -->
@@ -865,7 +925,7 @@ Worked on a research reflection paper on Database-as-a-Service and an android ap
       	<div class="col-six tab-full">
 	      	<div class="copyright">
 		        	<span>© Copyright 2020</span> 
-		        	<span>All Rights Reserved. </a></span>   	
+		        	<span>All Rights Reserved. </span>   	
 		         </div>		                  
 	      	</div>
 	      	<div id="go-top">
