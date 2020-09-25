@@ -76,7 +76,7 @@ header .top-bar {
 </head>
 
 <body id="top">
-   <header class="site-header">   	
+   <header class="site-header" id="site-header">   	
    		<div class="top-bar">
    			<a class="menu-toggle" href="#"><span>Menu</span></a>
 		   	<nav id="main-nav-wrap">
@@ -187,8 +187,8 @@ header .top-bar {
 				</ul> <!-- /skill-bars -->		
 
    		</div>
-		<div class="col-seven tab-full" style="padding-top: 35px;">
-   			<div class="col-four tab-full" style="padding: 0 0">
+		<div class="col-seven tab-full " style="padding-top: 35px;">
+   			<div class="col-four tab-full res-30" style="padding: 0 0">
    			<ul class="info-list" style="margin-left: 13px;">
    				<li>
    					<strong>Ruby on Rails</strong>
@@ -207,7 +207,7 @@ header .top-bar {
    				</li>
    			</ul> 
 			</div>
-<div class="col-three tab-full" style="padding: auto 0">
+<div class="col-three tab-full res-30" style="padding: auto 0">
    			<ul class="info-list">
    				<li>
    					<strong>Git</strong>
@@ -229,7 +229,7 @@ header .top-bar {
    				</li>
    			</ul>
    			</div>
-<div class="col-five tab-full" style="padding: auto 0">
+<div class="col-five tab-full res-30" style="padding: auto 0">
    			<ul class="info-list">
    				<li>
    					<strong>Docker</strong>
@@ -943,7 +943,21 @@ Worked on a research reflection paper on Database-as-a-Service and an android ap
    <script src="js/jquery-2.1.3.min.js"></script>
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
-
+<script>
+	jQuery(document).ready(function() {
+		// Header Fixed On scroll
+	jQuery(document).on("scroll", function(){
+		if
+      ($(document).scrollTop() > 20){
+		  $("#site-header").addClass("shrink");
+		}
+		else
+		{
+			$("#site-header").removeClass("shrink");
+		}
+	});
+});
+</script>	
 </body>
 
 </html>
